@@ -68,6 +68,7 @@ p{
     grid-area: DB;
     place-self: center;
 }
+
 @media only screen and (max-width: 768px) {
     .grid-container{
         height: 100vh;
