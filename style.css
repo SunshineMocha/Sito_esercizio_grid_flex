@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 html, body{
     margin: 0px;
@@ -20,6 +20,9 @@ html, body{
         ". . CP . . ."
         ". . . . . .";
 }
+p{
+    text-align: center;
+}
 
 .user1{
     width: 250px;
@@ -35,27 +38,35 @@ html, body{
 }
 .userA{
     grid-area: AP;
+    place-self: center;
 }
 .bioA{
     grid-area: AB;
+    place-self: center;
 }
 .userB{
     grid-area: BP;
+    place-self: center;
 }
 .bioB{
     grid-area: BB;
+    place-self: center;
 }
 .userC{
     grid-area: CP;
+    place-self: center;
 }
 .bioC{
     grid-area: CB;
+    place-self: center;
 }
 .userD{
     grid-area: DP;
+    place-self: center;
 }
 .bioD{
     grid-area: DB;
+    place-self: center;
 }
 @media only screen and (max-width: 768px) {
     .grid-container{
