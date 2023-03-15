@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+.grid-container{
+    height: 100vw;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". . . . . ."
+        ". . . AP . ."
+        ". BP BB AB . ."
+        ". . CB DB DP ."
+        ". . CP . . ."
+        ". . . . . .";
+}
+
+.user1{
+    max-width: 250px;
+}
+.user2{
+    width: 250px;
+}
+.user3{
+    width: 250px;
+}
+.user4{
+    width: 250px;
+}
+.userA{
+    grid-area: AP;
+}
+.bioA{
+    grid-area: AB;
+}
+.userB{
+    grid-area: BP;
+}
+.bioB{
+    grid-area: BB;
+}
+.userC{
+    grid-area: CP;
+}
+.bioC{
+    grid-area: CB;
+}
+.userD{
+    grid-area: DP;
+}
+.bioD{
+    grid-area: DB;
+}
+@media only screen and (max-width: 768px) {
+    .grid-container{
+        height: 100vw;
+        width: 100vw;
+        grid-template-columns: 100vw;
+        grid-template-rows: 100vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            ". . . ."
+            ". AP AB ."
+            ". BB CP ."
+            ". BP CB ."
+            ". DB DP ."
+            ". . . ."
+            ". . . .";
+    }
+}
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "AP"
+            "AB"
+            "BP"
+            "BB"
+            "CP"
+            "CB"
+            "DP"
+            "DB";
+    }
+}
